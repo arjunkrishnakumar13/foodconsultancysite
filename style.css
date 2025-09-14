@@ -1,43 +1,39 @@
-/* Existing styles remain same, adding extras below */
+/* Keep earlier styles, then add: */
 
-h1, h2, h3 {
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-.brand-highlight {
-  color: #e64a19;
-  font-weight: bold;
-}
-
-.timeline {
-  max-width: 800px;
-  margin: auto;
-  text-align: left;
+/* Hero & header colors */
+header {
+  background: linear-gradient(90deg, #ff7043, #e64a19);
+  color: white;
   padding: 2rem;
+  text-align: center;
 }
 
-.timeline-item {
-  margin: 1.5rem 0;
-  border-left: 4px solid #ff7043;
-  padding-left: 1rem;
+section:nth-child(even) {
+  background: #fff3e0; /* light orange background for alternate sections */
 }
 
-.card:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+section:nth-child(odd) {
+  background: #ffffff;
 }
 
-.products img {
-  width: 100%;
+/* About page */
+.timeline {
+  background: #fff8e1;
   border-radius: 10px;
-  transition: transform 0.3s;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.products img:hover {
-  transform: scale(1.08);
+/* Services */
+.services .card {
+  background: #ffe0b2;
+}
+
+/* Products */
+.products .card {
+  background: #fff3e0;
+}
+
+.products h3 {
+  color: #e64a19;
 }
